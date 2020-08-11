@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .sidebar__twitterIcon {
+  .feed__twitterIcon {
     display: block !important;
     margin: 0 !important;
   }
