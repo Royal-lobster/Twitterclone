@@ -28,7 +28,8 @@
   font-size: 15px;
 }
 .post__headerDescription-noimg {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 300;
 }
 .post__headerText > h3 {
   font-size: 15px;

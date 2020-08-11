@@ -1,7 +1,11 @@
 .widgets {
-  flex: 0.3;
-  overflow-y: scroll;
+  width: 45vw;
+  overflow: scroll;
   scrollbar-width: none;
+  margin-right: 10px;
+}
+.widgets::-webkit-scrollbar {
+  display: none;
 }
 
 .widgets__input {
@@ -34,4 +38,11 @@
 .widgets__widgetContainer > h2 {
   font-size: 18px;
   font-weight: 800;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .widgets {
+    display: none;
+    flex: 0;
+  }
 }

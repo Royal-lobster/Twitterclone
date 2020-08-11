@@ -1,5 +1,5 @@
 .feed {
-  flex: 0.4;
+  width: 50vw;
   border-right: 1px solid var(--twitter-background);
   min-width: fit-content;
   overflow-y: scroll;
@@ -9,7 +9,9 @@
 .feed::-webkit-scrollbar {
   display: none;
 }
-
+.feed__twitterIcon {
+  display: none !important;
+}
 .feed__header {
   position: sticky;
   top: 0;
@@ -22,4 +24,25 @@
 .feed__header > h2 {
   font-size: 20px;
   font-weight: 800;
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 900px) {
+  .feed {
+    flex: 1;
+    min-width: 80vw;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 568px) {
+  .feed {
+    flex: 1;
+    min-width: 80vw;
+  }
+
+  .feed__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar__twitterIcon {
+    display: block !important;
+    margin: 0 !important;
+  }
 }
