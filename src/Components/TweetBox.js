@@ -10,9 +10,9 @@ function TweetBox() {
   const setTweet = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      displayName: "Srujan Gurram",
-      username: "real_srujan",
-      verified: true,
+      displayName: "Anonymous Tweeter",
+      username: "anonymous",
+      verified: false,
       text: tweetMessage,
       image: tweetImage,
       avatar: "",
