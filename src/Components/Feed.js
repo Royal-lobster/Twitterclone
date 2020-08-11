@@ -5,6 +5,7 @@ import "./Feed.css";
 import db from "../Config/firebase";
 import FlipMove from "react-flip-move";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import Footer from "./Footer";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -37,6 +38,7 @@ function Feed() {
           />
         ))}
       </FlipMove>
+      <Footer />
     </div>
   );
 }

@@ -15,8 +15,7 @@ function TweetBox() {
       verified: true,
       text: tweetMessage,
       image: tweetImage,
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4D03AQH1Jvqtjknq6A/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=FQ3kNdRMX8NH5A2h1ZDdAWU2oE9XLPBuJXrKBp4UNyo",
+      avatar: "",
     });
     setTweetMessage("");
     setTweetImage("");
@@ -25,7 +24,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="https://media-exp1.licdn.com/dms/image/C4D03AQH1Jvqtjknq6A/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=FQ3kNdRMX8NH5A2h1ZDdAWU2oE9XLPBuJXrKBp4UNyo" />
+          <Avatar src="" />
           <input
             value={tweetMessage}
             placeholder="What's happening?"
